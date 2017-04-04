@@ -1,6 +1,7 @@
 import domian.Apple;
 import domian.Juicer;
 import domian.Label;
+import domian.Pear;
 
 /**
  * Created by jl062 on 2017/4/3.
@@ -23,6 +24,11 @@ public class Main {
         fruitLabel.setLabelName("红富士");
         appleA.setFruitLabel(juiceLabel);
         System.out.println(juicerA.juicing(appleA, fruitLabel));
+        Pear pear=new Pear();
+        pear.setWeight(800);
+        pear.setPearlabel(juiceLabel);
+        System.out.println(juicerA.juicing(pear,fruitLabel));
+
 
     }
 }

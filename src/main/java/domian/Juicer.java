@@ -62,7 +62,7 @@ public class Juicer {
             return "未通电";
         }
         fruit.generatejuice();
-        return fruit.getJuice() + label.getLabelName();
+        return label.getLabelName()+fruit.getJuice() ;
     }
 
 
