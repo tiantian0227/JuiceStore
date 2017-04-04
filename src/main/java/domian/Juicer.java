@@ -49,20 +49,20 @@ public class Juicer {
         this.electric = electric;
     }
 
-    public String juicing(Apple fruit) {
+    public String juicing(Apple fruit, Label label) {
         if (!this.electric) {
             return "您未通电";
         }
         fruit.generateJuice();
-        return  fruit.getJuice();
+        return label.getLabelName() + "牌的" + fruit.getJuice();
     }
 
-    public String juicing(Pear fruit){
-        if (electric==false){
+    public String juicing(Pear fruit, Label label) {
+        if (electric == false) {
             return "未通电";
         }
         fruit.generatejuice();
-        return fruit.getJuice();
+        return fruit.getJuice() + label.getLabelName();
     }
 
 
