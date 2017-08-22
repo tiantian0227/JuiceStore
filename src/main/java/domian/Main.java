@@ -1,3 +1,5 @@
+package domian;
+
 import domian.Apple;
 import domian.Juicer;
 import domian.Label;
